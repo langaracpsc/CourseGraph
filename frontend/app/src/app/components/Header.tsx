@@ -5,8 +5,8 @@ import langaraLogo from "../assets/images/langara-logo.png";
 
 const Header = () => {
   return (
-    <div className="fixed top-0 left-0 h-14 w-screen flex justify-between items-center px-4 py-2 z-30">
-      <Link href="/Menu" className="focus:outline-none focus:outline-orange-500 transition-colors duration-500 rounded-sm">
+    <div className="fixed top-0 left-0 h-14 w-screen flex justify-between items-center px-4 py-2 z-30 bg-black">
+      <Link href="/Menu" className="focus:outline-none rounded-sm">
         <IoHome className="text-3xl" />
       </Link>
       <Image
