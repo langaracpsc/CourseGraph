@@ -27,7 +27,7 @@ const UseProfilePage = create<Store>()((set) => ({
 
 const UseGraph = create<Graph>()((set)=> ({
 
-  data:["12","1","400","400","30"],
+  data:["12","1","400","100","300"],
   width:window.innerWidth,
   height:window.innerHeight,
   marginTop:20,
