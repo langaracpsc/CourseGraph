@@ -1,22 +1,24 @@
 import { FC } from "react";
+import FacultyMember from "../components/FacultyMember";
 
 type Member = {
-    name: string;
-    title: string;
-    office: string;
-    phone: string;
-    email: string;
-    overrideRequests: boolean;
+  name: string;
+  title: string;
+  office: string;
+  phone: string;
+  email: string;
+  overrideRequests: boolean;
 };
 
+// Placeholder data
 type DepartmentData = {
-    department: string;
-    members: Member[];
-}
+  department: string;
+  members: Member[];
+};
 
 const Page: FC = () => {
+  // Placeholder data
   const data: DepartmentData = {
-    // Placeholder data
     department: "Computer Science",
     members: [
       {
@@ -54,20 +56,15 @@ const Page: FC = () => {
           {data.department}
         </h2>
         {data.members.map((member, index) => (
-          <div key={index} className="w-48 pt-1">
-            {member.overrideRequests && (
-              <h3 className="text-lg font-semibold">Override requests:</h3>
-            )}
-            <h3 className="text-lg font-semibold">{member.name}</h3>
-            <p className="text-sm leading-3 text-neutral-300">{member.title}</p>
-            <ul className="pt-4 pb-1 border-b border-orange-500 leading-tight text-neutral-300">
-              <li>Office: {member.office}</li>
-              <li>Phone: {member.phone}</li>
-              <li>
-                Email Address: <span className="underline">{member.email}</span>
-              </li>
-            </ul>
-          </div>
+          <FacultyMember
+            key={index}
+            name={member.name}
+            title={member.title}
+            office={member.office}
+            phone={member.phone}
+            email={member.phone}
+            overrideRequests={member.overrideRequests}
+          />
         ))}
       </div>
     </div>
