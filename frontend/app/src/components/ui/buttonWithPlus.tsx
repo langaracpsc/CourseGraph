@@ -15,7 +15,7 @@ export function ButtonWithPlusIcon(propsDown:Props) {
   return (
     <>
     <div >
-    <Button onClick={(_e)=>ShowBanner()} className="hover:bg-orange-600 hover:text-white"  >
+    <Button onClick={()=>ShowBanner()} className="hover:bg-orange-600 hover:text-white"  >
       <CirclePlus className="mr-2 h-4 w-4 " /> {propsDown.title}
     </Button>
     </div>

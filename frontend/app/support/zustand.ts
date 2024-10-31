@@ -1,4 +1,5 @@
 
+import { NumberValue } from 'd3'
 import { create } from 'zustand'
 
 type Store = {
@@ -6,9 +7,10 @@ type Store = {
   openTheBanner: () => void
 }
 
+
 type Graph ={
   
-    data: [undefined, undefined] | [string, string],
+    data: NumberValue[],
     width:number,
     height:number,
     marginTop:number,
@@ -25,11 +27,12 @@ const UseProfilePage = create<Store>()((set) => ({
 
 }))
 
-const UseGraph = create<Graph>()((set)=> ({
 
-  data:["12","1","400","100","300"],
-  width:window.innerWidth,
-  height:window.innerHeight,
+const UseGraph = create<Graph>()(()=> ({
+  
+  data:[12,1],
+  width: typeof global.innerWidth === undefined ? 1000 : global.innerWidth,
+  height:typeof global.innerHeight === undefined ? 1000 : global.innerHeight,
   marginTop:20,
   marginRight:20,
   marginBottom : 20,

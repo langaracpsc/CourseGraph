@@ -56,7 +56,7 @@ export function CardWithForm() {
       </CardContent>
       <CardFooter className="flex justify-between">
         
-        <Button className=" hover:bg-orange-600  bg-black text-white hover:text-black" onClick={(_e)=>ShowBanner()} variant="outline">Cancel</Button>
+        <Button className=" hover:bg-orange-600  bg-black text-white hover:text-black" onClick={()=>ShowBanner()} variant="outline">Cancel</Button>
         <Button className=" hover:bg-orange-600  bg-black text-white hover:text-black" >Add +</Button>
       </CardFooter>
     </Card>

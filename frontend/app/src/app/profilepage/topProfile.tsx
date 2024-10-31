@@ -1,6 +1,6 @@
 "use client"
 import UserDefault from "@/../assets/profiledefaultimg";
-import { UseProfilePage } from "../../../support/zustand";
+
 
 
 
