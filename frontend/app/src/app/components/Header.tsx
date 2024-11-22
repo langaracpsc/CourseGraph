@@ -6,17 +6,19 @@ import langaraLogo from "../assets/images/langara-logo.png";
 
 const Header: FC = () => {
   return (
-    <div className="fixed top-0 left-0 h-14 w-screen flex justify-between items-center px-4 py-2 z-30 bg-black">
+    <div className="sticky top-0 left-0 h-14 w-full flex justify-between items-center px-4 py-2 z-30">
       <Link href="/Menu" className="focus:outline-none rounded-sm">
-        <IoHome className="text-3xl" />
+        <IoHome className="text-3xl text-white" />
       </Link>
-      <Image
-        className="object-cover"
-        src={langaraLogo}
-        alt="Langara College logo"
-        height={40}
-        width={40}
-      />
+      <a href="https://langara.ca/">
+        <Image
+          className="object-cover"
+          src={langaraLogo}
+          alt="Langara College logo"
+          height={40}
+          width={40}
+        />
+      </a>
     </div>
   );
 };

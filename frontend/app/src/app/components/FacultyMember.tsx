@@ -9,7 +9,7 @@ type FacultyMemberProps = {
 
 const FacultyMember: React.FC<FacultyMemberProps> = ({name, title, office, phone, email, overrideRequests}) => {
   return (
-    <div className="w-48 pt-1">
+    <div className="w-48 pt-1 text-white">
       {overrideRequests && (
         <h3 className="text-lg font-semibold">Override requests:</h3>
       )}

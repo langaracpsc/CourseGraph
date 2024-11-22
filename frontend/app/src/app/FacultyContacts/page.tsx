@@ -49,7 +49,7 @@ const Page: FC = () => {
   };
 
   return (
-    <div className="mt-14 pt-6 px-8">
+    <div className="mt-14 pt-6 px-8 text-white">
       <h1 className="text-xl font-semibold">Faculty Members</h1>
       <div className="pt-6">
         <h2 className="text-xl font-semibold border-b-2 border-orange-500 w-52 pb-1">
